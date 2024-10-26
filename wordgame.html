@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Memory Game</title>
+  <link rel="stylesheet" href="wordgame.css">
+</head>
+<body class="hackru-theme">
+  <!-- Top-right corner: Highest Level Display -->
+  <div class="top-right">
+    <span id="highest-level">Highest Level: 1</span>
+  </div>
+
+  <div class="game-container">
+    <h1 class="title">Memory Recall Game</h1>
+    <p id="current-level">Current Level: 1</p>
+
+    <button id="start-button">Start Game</button>
+    <button id="give-up-button" class="hidden">Give Up</button>
+
+    <div id="word-display" class="word-display"></div>
+
+    <div id="game-interface" class="game-interface hidden">
+      <div id="timer" class="timer">Time left: 60s</div>
+      <input type="text" id="user-input" placeholder="Type a word..." autocomplete="off" />
+      <div id="word-count" class="word-count">Words remembered: 0 / 0</div>
+    </div>
+
+    <div id="result" class="result"></div>
+  </div>
+
+  <script src="wordgame.js"></script>
+</body>
+</html>
