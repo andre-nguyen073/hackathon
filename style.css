@@ -1,3 +1,8 @@
 .title-words { 
     color: rgb(188, 81,119);
+    text-align: center;
+    font-size: 30px;
+    font-style: bold;
+    font-family: Arial, sans-serif;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }
