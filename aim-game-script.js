@@ -1,5 +1,16 @@
-const textElement = document.getElementById('#text');
+const textElement = document.querySelectorAll('.text');
+const countdownElement = document.getElementById('countdown');
+
+let timeLeft = 10;
+
+function startCountdown(){
+    textElement.forEach(element => {
+        element.style.display = 'none';
+    });
+    
+}
 
 document.addEventListener('click', () => {
-    textElement.style.display = 'none';
+    startCountdown();
 });
+
