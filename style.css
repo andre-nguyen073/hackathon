@@ -1,37 +1,71 @@
-.title-words { 
-    color: rgb(188, 81,119);
-    text-align: center;
-    font-size: 80px;
-    font-style: bold;
-    font-family: Arial, sans-serif;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
-}
-.box-container {
-    display: flex; /* Arrange boxes side by side */
-    height: calc(100vh - 80px); /* Full height minus title space */
-    padding: 10px;
-    gap: 20px; /* Space between boxes */
+/* General styling */
+body {
+    background-color: #01012b; /* Darkest background color */
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
   }
   
-  .info-box {
-    flex: 1; 
-    display: flex;
-    flex-direction: column; 
-    justify-content: flex-start;
-    align-items: center;
-    padding-top: 0px; 
-    gap: 5px; 
-    color: rgb(188, 81, 119);
-    font-size: 40px;
+  /* Main title styling with new color */
+  .main-title .title-words {
+    font-family: 'Audiowide', sans-serif;
+    font-size: 4rem;
+    color: #ff2a6d; /* Switched to hot pink */
+    text-shadow: 0 0 5px #ff2a6d, 0 0 10px #d1f7ff;
+    margin-top: -1rem;
+    margin-bottom: 3rem;
     text-align: center;
-    background-color: rgba(46, 76, 84, 0.3); 
-    border: 1px solid rgb(79, 193, 227);
-    border-radius: 20px; 
-    transition: transform 0.3s ease; 
-}
-a {
-    text-decoration: none; /* Remove underline */
-    color: inherit; /* Inherit text color from parent */
-}
+  }
+  
+  
+  /* Box container styling */
+  .box-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Info box styling */
+  .info-box {
+    background-color: #01012b; /* Teal background for each box */
+    width: 350px;
+    height: 450px;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  /* Updated box heading color */
+  .info-box h2 {
+    font-size: 1.8rem;
+    color: #05d9e8; /* Switched to cyan */
+    text-shadow: 0 0 1px #05d9e8, 0 0 10px #d1f7ff;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Paragraph text inside the boxes */
+  .info-box p {
+    font-size: 1rem;
+    color: #d1f7ff; /* Light blue for paragraphs */
+    margin-bottom: 1rem;
+  }
+  
+  /* Hover effect: Grow and glow */
+  .info-box:hover {
+    transform: scale(1.1); /* Scale up */
+    box-shadow: 0 0 15px #05d9e8, 0 0 30px #ff2a6d; /* Glow effect */
+  }
 
-
+  .responsive-img {
+    width: 90%;   /* Adjust width percentage */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 4000px; /* Set a height limit */
+    object-fit: contain; /* Prevent distortion */
+  }

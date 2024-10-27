@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <!-- Google Fonts -->
+     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Audiowide&display=swap" rel="stylesheet" />
+
+     <!-- External CSS -->
+     <link rel="stylesheet" href="style.css" />
+    <title>Word-Memory</title>
+    <link rel="stylesheet" href="word-memory.css"/>
+    <script>
+      window.onload = function() {
+        var x = displayWord();
+      };
+    </script>
+  </head>
+  <body style="background-color: #01012b">
+    <div>
+        <a href="index.html"> 
+        <button class="back-button">Back </button>
+    </a>
+        <p class="title-words"> Word Memory</p>
+      </div> 
+      <div> 
+        <p class="random-word-display" id="word-display"> </p>
+      </div> 
+      <div> 
+        <p class="counter_text" id="counter">Counter: 0</p>
+      </div>
+      <div> 
+        <button onclick="checkIfSeen()"class="correct-button">Seen</button>
+        <button onclick="newDisplay()"class="incorrect-button">New</button>
+    </div>
+    
+      <script src="word-memory.js"></script>
+  </body>
+</html>
