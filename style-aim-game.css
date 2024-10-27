@@ -13,6 +13,64 @@ p{
     margin-top: 25px;
     font-family: Ariel, sans-serif;
 }
+#countdown{
+    color: red;
+    font-size: 50px;
+    font-weight: normal;
+    margin-left: 700px;
+    margin-top: 10px;
+    font-family: Ariel, sans-serif;
+    position: absolute;
+    width: 100%;
+}
+#game_image{
+    position: absolute;
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    display: none;
+}
+#high_score{
+    position: absolute;
+    font-size: 50px;
+    color: white;
+    font-family: Ariel, sans-serif;
+    display: none;
+}
+#score{
+    position: absolute;
+    font-size: 50px;
+    color: white;
+    font-family: Ariel, sans-serif;
+    margin-top: 55px;
+    display: none;
+}
+p2{
+    font-size: 100px;
+    color: rgb(0, 242, 255); 
+}
+button{
+    font-size: 50px;
+    display: block;
+    border-color: rgb(244, 137, 137);
+    border-width: 60px;
+    border-top-width: 30px;
+    background-color: rgb(199, 61, 61);
+}
+#end_screen{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5em;
+}
 body{
     background-color: rgb(44,57,71);
+    overflow: hidden;
 }
