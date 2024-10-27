@@ -1,0 +1,106 @@
+.title-words { 
+    margin-top: 3px;
+    color: rgb(188, 81,119);
+    text-align: center;
+    font-size: 80px;
+    font-style: bold;
+    font-family: Arial, sans-serif;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+} 
+
+.back-button {
+    background-color: rgb(44, 57, 71);
+    border-color: rgb(236,150,85);
+    border-style:solid;
+    border-width: 6px;
+    color: rgb(236,150,85);
+    font-style: bold;
+    padding: 40px;
+    font-size: 35px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  .main-title {
+    align-items: center; /* Center items vertically */
+    padding: 10px;
+  }
+  
+  /* Hover effect for the back button */
+  .back-button:hover {
+    cursor: pointer;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  } 
+
+  .correct-button {
+    background-color: rgb(44, 57, 71);
+    border-color: rgb(236,150,85);
+    border-style:solid;
+    border-width: 6px;
+    color: rgb(236,150,85);
+    font-style: bold;
+    padding: 40px;
+    font-size: 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left:750px;
+    width: 180px
+  }
+  .incorrect-button { 
+    background-color: rgb(44, 57, 71);
+    border-color: rgb(236,150,85);
+    border-style:solid;
+    border-width: 6px;
+    color: rgb(236,150,85);
+    font-style: bold;
+    padding: 40px;
+    font-size: 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left:50px;
+    width: 180px;
+  }
+  .back-button:hover {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-2px);
+    cursor: pointer; 
+} 
+.incorrect-button:hover {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); 
+  transform: translateY(-2px); 
+  cursor: pointer; 
+}
+.correct-button:hover { 
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); 
+  transform: translateY(-2px);
+  cursor: pointer; 
+} 
+.word-container {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.random-word-display { 
+  color: white; 
+  font-size: 45px;
+  text-align: center;
+  margin-top: 2px;
+}
+.counter_text { 
+  color: white; 
+  font-size: 45px;
+  text-align: center;
+  margin-top: 2px;
+}
